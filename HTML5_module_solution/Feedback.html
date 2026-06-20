@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Feedback</title>
+        <style>
+            body{
+                font-family:Arial;
+                margin:20px;
+            }
+
+            img{
+                width:200px;
+                height:150px;
+            }
+        </style>
+        <script>
+            function validatephone(){
+                let phone = document.getElementById("Phone").value;
+
+                if(phone.length != 10){
+                    alert ("Phone number must contain 10 digits");
+                }
+            }
+
+            function showfee(){
+                let event = document.getElementbyid("event").value;
+                let fee="";
+
+                if(event=="sports")
+                    fee="100";
+                elseif(event=="cultural")
+                    fee="200";
+                elseif(event=="Workshop")
+                fee="300";
+
+                document.getelementbyid("fee").innerHTML = "Event fee :"+fee;
+            }
+
+            function submitform(){
+                alert("Feedback Submitted Successfully !");
+            }
+
+            function enlareimage(){
+                document.getelementbyid("eventimage").style.width="400px";
+                document.getElementbyid("Eventimage").style.height="300px";
+            }
+
+            function countCharacters(){
+            let count =
+            document.getElementById("feedback").value.length;
+
+            document.getElementById("charCount").innerHTML =
+            "Characters: " + count;
+        }
+        </script>
+    </head>
+    <body>
+        <h3 align="center">Event Feedback Form</h3>
+
+        <label>Phone Number :</label>
+        <input type="text" id="phone" onblur="validatephone()">
+
+        <br><br>
+
+        <label>Select Event :</label>
+        <select id="event" onchange="showfee()">
+
+            <option>Select</option>
+            <option>Cultural</option>
+            <option>Sports</option>
+            <option>Workshop</option>
+        </select>
+
+        <p id ="fee"></p>
+
+        <img src"="event.jpg" id ="Eventimage" onclick="enlargeImage()">
+        <p>Double click image to enlarge</p>
+
+        <label>Feedback : </label>
+        <textarea id ="feedback" rows="5" cols="40" onkeyup="countCharacter()"></textarea>
+
+        <p id="Charcount">Characters : 0</p>
+
+        <button onclick="submitform()">
+            Submit
+        </button>
+    </body>
+</html>
