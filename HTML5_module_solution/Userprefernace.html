@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saving User Preferances</title>
+
+        <script>
+            function savepreferances(){
+                let eventtype = document.getelemtbyid("event").value;
+
+                localstorage.setItem("prefferedEvent",evettype);
+                sessionstorage.setItem("currentEvent",eventtype);
+
+                alert("Preference Saved !");
+            }
+
+            function loadpreferances(){
+                let savedEvent = localstorage.getItem("preferredEvent");
+
+                if(savedEvent != null){
+                    document.getElementbyid("event").value=savedEvent;
+                }
+            }
+
+            function clearpreferances(){
+                localstorage.clear();
+                sessionstorage.clear();
+
+                document.getelementbyid("event").value="";
+
+                alert("Preferances Cleared!");
+            }
+        </script>
+    </head>
+
+    <body onload="loadpreferances()">
+        <h2>
+            Preferred Event Selection
+        </h2>
+
+        <label>Select Evnet type</label>
+        <select id="event">
+            <option>Select Event </option>
+            <option value="sports">Sports</option>
+            <option value="Cultural">Cultural</option>
+            <option value="Workshop">Workshop</option>
+        </select>
+        <br><br>
+        <button onclick="savepreferances()">Save Preferances</button>
+
+        <buton onclick="clearpreferancesgit()">Clear Preferance</buton>
+    </body>
+</html>
