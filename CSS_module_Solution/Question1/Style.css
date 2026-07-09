@@ -1,0 +1,14 @@
+h2{
+    color : blue;
+    text-align:center;
+}
+
+p{
+    font-size:10px;
+}
+
+button{
+    background-color: rgb(154, 233, 206);
+    color:black;
+    border-radius:5px;
+}
