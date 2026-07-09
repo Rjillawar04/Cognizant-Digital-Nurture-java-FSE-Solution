@@ -1,0 +1,35 @@
+/* universal Selector */
+*{
+    padding:0;
+    margin:0;
+}
+
+/* Element Selector */
+h2{
+    background-color:navy;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Class Selector */
+.eventcard{
+    border :2px solid black;
+    padding:15px;
+    margin:20px;
+    background-color:aquamarine;
+
+}
+/* Id selector */
+ #mianheading{
+    background-color: bisque;
+    color:black;
+    text-align:center;
+ }
+  /* Grouping Selector */
+  h3,p{
+    color : green;
+    font-family:arial;
+ }
+
+
