@@ -1,0 +1,43 @@
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+}
+
+.nav-menu li {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+.event-list {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.event-list li {
+    padding: 8px;
+    margin: 5px 0;
+}
