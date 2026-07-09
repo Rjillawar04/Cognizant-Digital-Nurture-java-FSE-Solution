@@ -1,0 +1,32 @@
+bofy{
+    background-color:rgb(209, 196, 181);
+
+    background-image: url(city.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    background-position:center;
+    font-family:Arial;
+    margin:0;
+    color: #333333;
+}
+
+header{
+    background-color: rgb(146, 185, 172);
+    color:#ffffff;
+    text-align:center;
+}
+
+section{
+    margin:20px;
+    padding:20px;
+    background-color:rgba(255, 255, 255, 0.85);
+    border-radius:5px;
+}
+
+section h2 {
+    background: linear-gradient(to right, #0066cc, #33ccff);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
