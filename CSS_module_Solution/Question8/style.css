@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#box1{
+    height:200px;
+    width:200px;
+    background-color: brown;
+}
+
+#box2{
+    height:200px;
+    width:200px;
+    background-color:rgb(237, 137, 5)
+}
+
+body{
+    font-family:Arial;
+    margin:20px;
+}
+
+.eventcard{
+    border:2px solid blue;
+    padding:20px;
+    margin:20px;
+    background-color:#bd9b9b;
+}
+
+input:focus{
+    outline:3px solid red;
+}
+
+#box1{
+    visibility:hidden
+}
+
+#box1{
+    display:none;
+}
