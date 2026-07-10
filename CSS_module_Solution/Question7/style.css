@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:Arial;
+    margin:20;
+}
+
+h1{
+    text-align: center;
+}
+
+table{
+    width:70%;
+    margin:auto;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid black;
+    padding : 10px;
+    text-align:center;
+}
+
+th{
+    background-color: aqua;
+    color:black
+}
+
+
+
+tr:nth-child(even){
+    background-color:beige;
+}
