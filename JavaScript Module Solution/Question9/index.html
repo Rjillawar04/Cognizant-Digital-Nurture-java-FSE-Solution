@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fetch Events</title>
+</head>
+<body>
+
+    <h2>Community Events</h2>
+
+    <button onclick="fetchEvents()">Fetch Events (.then)</button>
+
+    <button onclick="loadEvents()">Fetch Events (Async/Await)</button>
+
+    <br><br>
+
+    <div id="loading" style="display:none;">
+        Loading...
+    </div>
+
+    <ul id="eventList"></ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
