@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Community Event Portal</title>
+</head>
+<body>
+
+    <h2>Community Events</h2>
+
+    <!-- Search Box -->
+    <input type="text" id="searchBox" placeholder="Search Event">
+
+    <br><br>
+
+    <!-- Category Filter -->
+    <select id="category">
+        <option value="All">All</option>
+        <option value="Technology">Technology</option>
+        <option value="Sports">Sports</option>
+        <option value="Music">Music</option>
+    </select>
+
+    <br><br>
+
+    <!-- Event List -->
+    <div id="eventList">
+
+        <div class="event">
+            <h3>Tech Conference</h3>
+            <p>Category: Technology</p>
+            <button onclick="registerEvent('Tech Conference')">
+                Register
+            </button>
+        </div>
+
+        <hr>
+
+        <div class="event">
+            <h3>Football Match</h3>
+            <p>Category: Sports</p>
+            <button onclick="registerEvent('Football Match')">
+                Register
+            </button>
+        </div>
+
+        <hr>
+
+        <div class="event">
+            <h3>Music Festival</h3>
+            <p>Category: Music</p>
+            <button onclick="registerEvent('Music Festival')">
+                Register
+            </button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
