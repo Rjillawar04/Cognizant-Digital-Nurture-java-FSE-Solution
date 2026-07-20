@@ -61,7 +61,7 @@ class Computer {
     }
 }
 
-public class Main {
+public class BuilderPattern {
 
     public static void main(String[] args) {
 
