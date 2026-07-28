@@ -1,11 +1,20 @@
-<h1>Welcome to Student Course Portal</h1>
+<h1>Student Course Portal</h1>
 
 <p>
-  This portal helps students browse courses, enroll in courses, and view their profile.
+  This portal helps students browse courses,
+  enroll in courses,
+  and view their profile.
 </p>
 
-<div>
-  <p><strong>Courses Available:</strong> 12</p>
-  <p><strong>Enrolled:</strong> 3</p>
-  <p><strong>GPA:</strong> 3.8</p>
-</div>
+<hr>
+
+<h3>Portal Statistics</h3>
+
+<p>
+  <strong>Courses Available:</strong>
+  {{ totalCourses }}
+</p>
+
+<hr>
+
+<app-course-summary-widget></app-course-summary-widget>

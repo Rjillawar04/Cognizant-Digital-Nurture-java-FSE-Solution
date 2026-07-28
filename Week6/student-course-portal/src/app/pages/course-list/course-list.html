@@ -1,1 +1,53 @@
-<p>course-list works!</p>
+<h2>Course List</h2>
+
+<!-- Search -->
+<div style="margin-bottom:15px;">
+
+  <input
+    type="text"
+    placeholder="Search Course"
+    [(ngModel)]="searchTerm">
+
+  <button (click)="searchCourses()">
+    Search
+  </button>
+
+</div>
+
+<!-- Loading -->
+<div *ngIf="isLoading">
+  <p>Loading courses...</p>
+</div>
+
+<!-- After Loading -->
+<div *ngIf="!isLoading">
+
+  <!-- No Courses -->
+  <div *ngIf="courses.length == 0; else courseData">
+
+    <p>No courses available.</p>
+
+  </div>
+
+  <!-- Course List -->
+  <ng-template #courseData>
+
+    <app-course-card
+      *ngFor="let course of courses; trackBy: trackByCourseId"
+      [course]="course"
+      (enrollRequested)="onEnroll($event)">
+    </app-course-card>
+
+  </ng-template>
+
+  <!-- Selected Course -->
+  <div *ngIf="selectedCourseId != 0">
+
+    <h3>
+      Selected Course ID :
+      {{ selectedCourseId }}
+    </h3>
+
+  </div>
+
+</div>
